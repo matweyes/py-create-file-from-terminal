@@ -1,7 +1,6 @@
 import sys
 import os
 from datetime import datetime
-from typing import Any
 
 
 def create_directory(path: str) -> None:
