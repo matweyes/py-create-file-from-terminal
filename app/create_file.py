@@ -4,12 +4,12 @@ from datetime import datetime
 from typing import Any
 
 
-def create_directory(path: Any) -> None:
+def create_directory(path: str) -> None:
     os.makedirs(path, exist_ok=True)
     print(f"Directory created: {path}")
 
 
-def create_file(file_path: Any) -> None:
+def create_file(file_path: str) -> None:
     with open(file_path, "a") as file:
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         file.write(f"\n{timestamp}\n")
